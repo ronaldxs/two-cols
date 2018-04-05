@@ -1,0 +1,22 @@
+-----------------------------------     -----------------------------------     
+Some data                               More data that is seperated             
+that varies in line length              by a new line and dashes                
+-----------------------------------     with a longer column2 article           
+                                        - ok twice as long                      
+-----------------------------------     -----------------------------------     
+The odd third article                                                           
+-----------------------------------     -----------------------------------     
+                                        short second column 2 article           
+-----------------------------------     -----------------------------------     
+no break before this first col                                                  
+article                                 -----------------------------------     
+-----------------------------------     we want a long                          
+                                        second article column here              
+                                        to test                                 
+                                        a second column article                 
+                                        that is going to drop                   
+                                        past the end of column 1                
+                                        and force blank trailing space          
+                                        in the first column                     
+                                        -----------------------------------     
+                                                                                

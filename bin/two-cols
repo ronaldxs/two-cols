@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+while getopts t: opt; do
+    case $opt in
+        t)  term_cols="$OPTARG"
+            if [[ -n ${term_cols//[0-9]} ]] ; then
+                echo "Terminal columns must be integer" >&2
+                exit 2
+            fi
+            ;;
+    esac
+done
+
+if [ -z ${term_cols:+1} ]; then
+    term_cols=$(tput cols)
+fi
+
+col_width=$((term_cols / 2))
+
+# echo "$col_width"
+
+sed "s/^\(-\{$((col_width - 2))\}\)-*\$/\1/" | # can't wrap -- record separators
+    fold -w$col_width | # wrap lines if too long 
+    "$(dirname "$0")/two-cols.pl" -t$term_cols
