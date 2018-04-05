@@ -46,5 +46,5 @@ OUTPUT:
 This project is based on a
 [question from stackoverflow](https://stackoverflow.com/questions/49620687/print-a-file-in-multiple-columns-based-on-delimiter).
 If further development is desired please post an issue on
-[GitHub](https://github.org) or contact me,
+[GitHub](https://github.com/ronaldxs/two-cols.git) or contact me,
 ronaldxs at software-path.com .
