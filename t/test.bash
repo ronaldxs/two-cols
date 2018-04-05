@@ -11,11 +11,11 @@ test_file_at_width() {
     ((test_count++))
 
     if diff "$result_file" "$expected_result" ; then
-        echo ok $test_count
+        echo ok $test_count - $1 $2 columns
         rm $result_file
     else
         echo differences above between result in "$result_file" and expected result in "$expected_result"
-        echo not ok $test_count
+        echo not ok $test_count - $1 $2 columns
     fi
 }
 
